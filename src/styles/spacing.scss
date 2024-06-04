@@ -1,0 +1,104 @@
+// Function to generate padding and margin utilities
+@mixin spacing-utilities($prefix, $property) {
+  @each $name, $value in $spacing-values {
+    .#{$prefix}-#{$name} {
+      #{$property}: $value;
+    }
+  }
+}
+
+// Spacing values map
+$spacing-values: (
+  none: 0,
+  xs: 4px,
+  sm: 8px,
+  md: 16px,
+  lg: 24px,
+  xl: 32px,
+);
+
+// Generate padding utilities
+@include spacing-utilities("p", "padding");
+
+// Generate margin utilities
+@include spacing-utilities("m", "margin");
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.mr-10 {
+  margin-left: 10px;
+}
+
+.mr-20 {
+  margin-left: 20px;
+}
+
+.mr-30 {
+  margin-left: 30px;
+}
+
+.mr-40 {
+  margin-left: 40px;
+}
+
+.mr-50 {
+  margin-left: 50px;
+}

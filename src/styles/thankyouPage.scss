@@ -1,0 +1,344 @@
+@import "../styles/colors.scss";
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(80%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.thankyou-page-image {
+  animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+.thankyou-content {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.thankyou-main-heading {
+  font-size: 34px;
+  font-weight: 800;
+  font-family: "Axiforma", sans-serif;
+  margin-bottom: 70px;
+}
+
+.thankyou-page-subcontainer {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 38px;
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 30px;
+  line-height: 54px;
+}
+
+.label-heading-color {
+  color: $accent-color;
+}
+
+.thankyou-description {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Outfit", sans-serif;
+  margin-top: 40px;
+  opacity: 80%;
+}
+
+.thankyou-short-description {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+  margin-top: 70px;
+}
+
+@media only screen and (min-width: 979px) {
+  .thankyou-maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+  }
+
+  .thankyou-page-image {
+    float: right;
+    margin-left: 40px;
+    width: 500px;
+    height: 600px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 979px) and (orientation: portrait) {
+  //  for small screens
+  .thankyou-maincontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 110px 40px 0px 30px;
+    height: max-content;
+  }
+
+  .thankyou-page-image {
+    margin-top: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 950px) and (orientation: portrait) {
+  .thankyou-page-image {
+    width: 760px;
+    height: 550px;
+  }
+
+  .thankyou-main-heading {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 30px;
+    width: max-content;
+  }
+
+  .thankyou-page-subcontainer {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    width: max-content;
+  }
+
+  .thankyou-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    margin-top: 0px;
+    width: 690px;
+  }
+
+  .thankyou-short-description {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 480px) and (orientation: portrait) {
+  .thankyou-maincontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 20px 0px 20px;
+    overflow: hidden;
+    height: max-content;
+  }
+
+  .thankyou-page-image {
+    height: max-content;
+    width: 370px;
+  }
+
+  .thankyou-main-heading {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .thankyou-page-subcontainer {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .thankyou-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+  }
+
+  .thankyou-short-description {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 399px) and (orientation: portrait) {
+  .thankyou-maincontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 30px 0px 30px;
+    height: max-content;
+    overflow: hidden;
+  }
+
+  .thankyou-page-image {
+    width: 100%;
+    height: max-content;
+  }
+
+  .thankyou-main-heading {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .thankyou-page-subcontainer {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .thankyou-description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.16px;
+    margin-top: 0px;
+  }
+
+  .thankyou-short-description {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 17px;
+    margin-top: 10px;
+  }
+}
+
+/* different techniques for iPad screening */
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
+  .thankyou-maincontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  /* For portrait layouts only */
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1180px) and (orientation: landscape) {
+  .thankyou-maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 50px;
+    overflow: hidden;
+  }
+
+  .thankyou-page-image {
+    width: 320px;
+    height: 400px;
+  }
+
+  .thankyou-page-image {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .thankyou-main-heading {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  .thankyou-page-subcontainer {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+  }
+
+  .thankyou-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    margin-top: 0px;
+  }
+
+  .thankyou-short-description {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+  .thankyou-content {
+    margin-top: 90px;
+  }
+
+  /* For landscape layouts only */
+}
+
+@media only screen and (min-width: 450px) and (max-width: 799px) and (orientation: landscape) {
+  .thankyou-maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px 200px;
+    overflow: hidden;
+  }
+
+  .thankyou-page-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .thankyou-main-heading {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  .thankyou-page-subcontainer {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 28px;
+  }
+
+  .thankyou-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.16px;
+    margin-top: 0px;
+  }
+
+  .thankyou-short-description {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+}
+
+:dir(rtl) .thankyou-content {
+  font-family: "Noto Sans Arabic", sans-serif !important;
+}
+
+:dir(rtl) .thankyou-description {
+  font-family: "Noto Sans Arabic", sans-serif !important;
+}
+
+:dir(rtl) .thankyou-short-description {
+  font-family: "Noto Sans Arabic", sans-serif !important;
+}
+
+:dir(rtl) .thankyou-main-heading {
+  font-family: "Noto Sans Arabic", sans-serif !important;
+}
+
+:dir(rtl) .thankyou-page-subcontainer {
+  font-family: "Noto Sans Arabic", sans-serif !important;
+}

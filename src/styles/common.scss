@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("/public/images/BackgroundImage.jpg");
+  color: #fff;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.h-55 {
+  height: 55px;
+}
+
+.h-65 {
+  height: 65px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.black-color {
+  color: #0000 !important;
+}
+
+.white-color {
+  color: #fff !important;
+}
+
+.ant-modal-title {
+  text-align: center; /* Center align modal title */
+}
+
+.ant-modal-footer {
+  text-align: center; /* Center align modal footer */
+}
+
+@media (min-width: 979px) {
+  body {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+}
+
+:where(.css-dev-only-do-not-override-19n9si0).ant-input-outlined {
+  border-width: 2px !important;
+}
+
+.english-font {
+  font-family: "Axiforma", sans-serif;
+}
+
+.arabic-font {
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+
+.input-otp__field {
+  height: 45px !important;
+}
+
+:where(.css-dev-only-do-not-override-19n9si0).ant-modal .ant-modal-close {
+  display: none !important;
+}
+
+.not-found {
+  font-size: 30px;
+  font-family: "Axiforma", sans-serif;
+  font-weight: 800;
+}

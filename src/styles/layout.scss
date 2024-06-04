@@ -1,0 +1,56 @@
+.layout-maincontainer {
+  position: relative;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px 0px 0px 30px;
+}
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 40px 0px 0px;
+  z-index: 1;
+}
+
+.custom-select {
+  display: inline-block;
+  position: relative;
+}
+
+.custom-select-inner .ant-select-selector {
+  border-radius: 50%;
+}
+
+.custom-dropdown {
+  border-radius: 0;
+}
+
+.custom-toggle-switch {
+  margin-right: 10px;
+}
+
+/* Additional styles for the switch */
+.custom-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.ant-switch {
+  width: 50px;
+  height: 26px;
+}
+
+.ant-switch-inner {
+  border-radius: 13px;
+}
+
+.ant-switch-handle {
+  width: 22px;
+  height: 22px;
+  top: 2px;
+}

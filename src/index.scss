@@ -1,0 +1,17 @@
+@import "./styles/spacing.scss";
+@import "./styles/common.scss";
+@import "./styles/colors.scss";
+@import "./styles/initPage.scss";
+@import "./styles/quiz.scss";
+@import "./styles/subscription.scss";
+@import "./styles/thankyouPage.scss";
+@import "./styles/layout.scss";
+// @import "./fonts/fonts.scss";
+
+*[dir="rtl"] {
+  font-family: "Noto Sans Arabic", sans-serif !important;
+}
+
+*[dir="ltr"] {
+  font-family: "Axiforma", sans-serif;
+}
